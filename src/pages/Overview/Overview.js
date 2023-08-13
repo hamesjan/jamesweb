@@ -63,6 +63,16 @@ const Overview = () => {
   ];
   return (
     <div className="display block">
+      <div className={classes.visit_counter}>
+        <a href="http://stuff.mit.edu/doc/counter-howto.html">
+          <img
+            src="http://stuff.mit.edu/cgi/counter/jameshanweb1023417"
+            alt="several"
+            style={{ marginRight: "5px" }}
+          />
+        </a>
+        page visits
+      </div>
       <div className={classes.outer_dv}>
         This is a <b>personal portfolio</b> for <b>James Han.</b>
         <br />
