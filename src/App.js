@@ -8,6 +8,7 @@ import Projects from "./pages/Projects/Projects";
 import Music from "./pages/Music/Music";
 import Contact from "./pages/Contact/Contact";
 import CV from "./pages/Resume/CV";
+import { app } from "./firebaseconfig"; // Adjust the path as needed
 
 function App() {
   return (
