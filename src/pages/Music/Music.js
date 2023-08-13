@@ -6,11 +6,16 @@ const Music = () => {
   return (
     <div className="mt-5">
       <div className="flex">
-        <img src={spotifyImage} className="h-8 w-8 object-cover mr-2" />
+        <img
+          src={spotifyImage}
+          className="h-8 w-8 object-cover mr-2"
+          alt="Spotify logo"
+        />
         <a
           className="text-green-500 hover:underline font-bold text-xl"
           href="https://open.spotify.com/user/jhan31903"
           target="_blank"
+          rel="noreferrer"
         >
           Spotify
         </a>

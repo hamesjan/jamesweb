@@ -5,6 +5,7 @@ const Contact = () => {
       <a
         href="https://www.linkedin.com/in/jameshan310"
         target="_blank"
+        rel="noreferrer"
         className="text-blue-700 hover:underline text-bold-800"
       >
         Linkedin
@@ -13,6 +14,7 @@ const Contact = () => {
       <a
         href="https://www.instagram.com/hamesjan/"
         target="_blank"
+        rel="noreferrer"
         className="text-purple-700 hover:underline text-bold-800"
       >
         Instagram

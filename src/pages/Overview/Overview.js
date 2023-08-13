@@ -1,4 +1,3 @@
-import { useState } from "react";
 import classes from "./Overview.module.css";
 import mugshot from "../../assets/imgs/mugshot.png";
 import plots from "../../assets/imgs/plots.png";
@@ -21,6 +20,8 @@ const Overview = () => {
     { name: "Astro", color: "bg-blue-800", category: 0 },
     { name: "Next.js", color: "bg-indigo-800", category: 0 },
     { name: "Streamlit", color: "bg-orange-300", category: 0 },
+    { name: "Flask", color: "bg-green-600", category: 0 },
+    { name: "Django", color: "bg-green-400", category: 0 },
     { name: "Tailwind", color: "bg-red-900", category: 0 },
 
     { name: "Pytorch", color: "bg-red-500", category: 1 },
@@ -65,7 +66,7 @@ const Overview = () => {
       <div className={classes.outer_dv}>
         This is a <b>personal portfolio</b> for <b>James Han.</b>
         <br />
-        <img src={mugshot} className="h-64 w-90" />
+        <img src={mugshot} className="h-64 w-90" alt="img" />
         <br />
         <p>Below is an overview of my personal experience and interests.</p>
         <div className="min-h-screen">
@@ -139,6 +140,7 @@ const Overview = () => {
                         className="text-sm text-blue-600 font-semibold"
                         href={project.link}
                         target="_blank"
+                        rel="noreferrer"
                       >
                         {project.link.length > 50
                           ? project.title

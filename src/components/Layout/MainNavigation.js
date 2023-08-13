@@ -34,6 +34,17 @@ const MainNavigation = () => {
             Music
           </h1>
         </Link>
+        <Link to="/cv">
+          <h1
+            className={
+              tab.pathname == "/cv"
+                ? classes.selected_tab
+                : classes.unselected_tab
+            }
+          >
+            CV
+          </h1>
+        </Link>
         <Link to="/contact">
           <h1
             className={
