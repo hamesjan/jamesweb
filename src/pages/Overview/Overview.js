@@ -1,171 +1,282 @@
-import classes from "./Overview.module.css";
 import mugshot from "../../assets/imgs/mugshot.png";
 import plots from "../../assets/imgs/plots.png";
-import surfen from "../../assets/imgs/surfen.png";
-import shopedia from "../../assets/imgs/shopedia.png";
+import processorpaper from "../../assets/imgs/processorpaper.png";
+import surfvision from "../../assets/imgs/surfvision.png";
+import resume from "../../assets/JamesHanResume.pdf";
+import bio from "../../assets/bio.txt";
+import surfengif from "../../assets/out.gif";
+import dronegif from "../../assets/drone.gif";
+import tritondemo from "../../assets/tritondemo.gif";
+import pokefy from "../../assets/pokefy.gif";
+import "./Overview.css";
+import { Link } from "react-router-dom";
 
 const Overview = () => {
-  const technologies = [
-    { name: "React/React Native", color: "bg-indigo-500", category: 0 },
-    { name: "Flutter", color: "bg-blue-600", category: 0 },
-    { name: "GraphQL", color: "bg-purple-600", category: 0 },
-    { name: "Firebase", color: "bg-red-500", category: 0 },
-    { name: "Python", color: "bg-green-400", category: 0 },
-    { name: "Amplify", color: "bg-yellow-500", category: 0 },
-    { name: "MongoDB", color: "bg-green-500", category: 0 },
-    { name: "PostgreSQL", color: "bg-blue-400", category: 0 },
-    { name: "GCP", color: "bg-orange-300", category: 0 },
-    { name: "HTML/JS/CSS", color: "bg-green-900", category: 0 },
-    { name: "TypeScript", color: "bg-violet-400", category: 0 },
-    { name: "Astro", color: "bg-blue-800", category: 0 },
-    { name: "Next.js", color: "bg-indigo-800", category: 0 },
-    { name: "Streamlit", color: "bg-orange-300", category: 0 },
-    { name: "Flask", color: "bg-green-600", category: 0 },
-    { name: "Django", color: "bg-green-400", category: 0 },
-    { name: "Tailwind", color: "bg-red-900", category: 0 },
-
-    { name: "Pytorch", color: "bg-red-500", category: 1 },
-    { name: "OpenCV", color: "bg-cyan-500", category: 1 },
-    { name: "TensorFlow", color: "bg-yellow-800", category: 1 },
-    { name: "Pandas", color: "bg-gray-900", category: 1 },
-    { name: "Numpy", color: "bg-blue-400", category: 1 },
-
-    { name: "C", color: "bg-purple-300", category: 8 },
-    { name: "C++", color: "bg-purple-400", category: 8 },
-    { name: "Java", color: "bg-green-300", category: 8 },
-  ];
-
-  const projects = [
-    {
-      title: "Shopedia",
-      imageSrc: shopedia,
-      date: "April 2023",
-      link: "https://main.dyi9pc3zyrqj8.amplifyapp.com/view-product/?id=3200043828",
-      description:
-        "Shopedia is a LLM4REC model website that takes in a user query and uses LLMs to generate tailored shopping items for a given situation. ",
-    },
-    {
-      title: "Surfen",
-      imageSrc: surfen,
-      date: "Aug 2022",
-      link: "https://surfen.web.app/",
-      description:
-        "Surfen is a surf clip enhancer that uses Lucas-Kanade optical flow in order to detect and follow surfers in a surfline replay.",
-    },
-    {
-      title: "Plots - party with your homies",
-      imageSrc: plots,
-      date: "June 2021",
-      link: "https://apps.apple.com/us/app/plots-party-with-your-homies/id1579989678",
-      description:
-        "A party organization iOS app designed to facilitate the organization and marketing of LA-style parties Software acquired by Cruuz Inc. after negotiating with Mamoun Debbagh for $10,000 on February 24, 2022",
-    },
-  ];
   return (
-    <div className="display block">
-      <div className={classes.visit_counter}>
-        <a href="http://stuff.mit.edu/doc/counter-howto.html">
-          <img
-            src="http://stuff.mit.edu/cgi/counter/jameshanweb1023417"
-            alt="several"
-            style={{ marginRight: "5px" }}
-          />
-        </a>
-        page visits
-      </div>
-      <div className={classes.outer_dv}>
-        This is a <b>personal portfolio</b> for <b>James Han.</b>
-        <br />
-        <img src={mugshot} className="h-64 w-90" alt="img" />
-        <br />
-        <p>Below is an overview of my personal experience and interests.</p>
-        <div className="min-h-screen">
-          <div className="max-w-3xl">
-            <section className="bg-white rounded-lg shadow-lg p-6 mb-6">
-              <h2 className="text-xl font-semibold mb-4">WebDev</h2>
-              <ul className="flex flex-wrap gap-2">
-                {technologies.map((tech, index) =>
-                  tech.category === 0 ? (
-                    <li key={index}>
-                      <div
-                        className={`rounded-full p-2 ${tech.color} text-white`}
-                      >
-                        {tech.name}
-                      </div>
-                    </li>
-                  ) : null
-                )}
-              </ul>
-              <h2 className="text-xl font-semibold mb-4 mt-4">ML/CV</h2>
-              <ul className="flex flex-wrap gap-2">
-                {technologies.map((tech, index) =>
-                  tech.category === 1 ? (
-                    <li key={index}>
-                      <div
-                        className={`rounded-full p-2 ${tech.color} text-white`}
-                      >
-                        {tech.name}
-                      </div>
-                    </li>
-                  ) : null
-                )}
-              </ul>
-              <h2 className="text-xl font-semibold mb-4 mt-4">Other</h2>
-              <ul className="flex flex-wrap gap-2">
-                {technologies.map((tech, index) =>
-                  tech.category === 8 ? (
-                    <li key={index}>
-                      <div
-                        className={`rounded-full p-2 ${tech.color} text-white`}
-                      >
-                        {tech.name}
-                      </div>
-                    </li>
-                  ) : null
-                )}
-              </ul>
-            </section>
-
-            <section className="bg-white rounded-lg shadow-lg p-6 text-cente">
-              <div className="flex justify-between items-center mb-4">
-                <h2 className="text-xl font-semibold">Recent Projects</h2>
+    <div className="w-full max-w-3xl mx-auto p-5">
+      <table className="w-full mb-5">
+        <tbody>
+          <tr>
+            <td className="w-2/3 p-2.5 align-middle">
+              <p className="text-center font-bold text-3xl">James Han</p>
+              <br />
+              <p>
+                I'm a senior at{" "}
+                <a href="https://ucsd.edu/" className="text-blue-500 underline">
+                  UC San Diego
+                </a>{" "}
+                where I study computer science with a specialization in embedded
+                systems. I am doing my masters in Computer Engineering at UCSD starting Fall 2025.
+              </p>
+              <br />
+              <p>
+                I grew up in the sunny streets of Torrance, Calfornia. I love
+                the ocean, my dog, and eating yummy foods. For work, I have
+                interned at{" "}
                 <a
-                  className="text-blue-500 hover:underline text-bold-800"
-                  href="/projects/"
+                  href="https://www.mobis.com/en/index.do"
+                  className="text-blue-500 underline"
                 >
-                  See All Projects
-                </a>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                {projects.map((project, index) => (
-                  <div key={index} className="border rounded-lg block">
-                    <img
-                      src={project.imageSrc}
-                      alt={project.title}
-                      className="w-full h-24 object-cover"
-                    />
-                    <div className="flex flex-col w-full p-2">
-                      <h3 className="text-lg font-semibold">{project.title}</h3>
-                      <a
-                        className="text-sm text-blue-600 font-semibold"
-                        href={project.link}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        {project.link.length > 50
-                          ? project.title
-                          : project.link}
-                      </a>
-                      <p className="text-gray-500 mb-2">{project.date}</p>
-                      <p className="text-sm">{project.description}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </section>
-          </div>
-        </div>
-      </div>
+                  Hyundai Mobis
+                </a>{" "}
+                in Seoul, South Korea and I help with the{" "}
+                <a
+                  href="https://www.raytechx.com/"
+                  className="text-blue-500 underline"
+                >
+                  family business
+                </a>{" "}
+                from time to time. Currently, I am the lead embedded software engineer for{" "}
+                <a
+                  href="https://www.goltech.co"
+                  className="text-blue-500 underline"
+                >
+                  Goltech
+                </a>,
+                 a medical technology startup based in San Diego.
+              </p>
+              <br />
+              <p className="text-center">
+                <a href="mailto:jjhan@ucsd.com">Email</a> &nbsp;/&nbsp;
+                <a href={resume}>Resume</a> &nbsp;/&nbsp;
+                <a href={bio}>Bio</a> &nbsp;/&nbsp;
+                <a href="https://github.com/hamesjan/">Github</a>&nbsp;/&nbsp;
+                <Link to="/fish">Fish</Link>
+                </p>
+            </td>
+            <td className="w-1/3 p-2.5">
+              <a href={mugshot}>
+                <img
+                  src={mugshot}
+                  alt="profile"
+                  className="w-full rounded-full object-cover"
+                />
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table className="w-full mb-5">
+        <tbody>
+          <tr>
+            <td className="p-5 align-middle">
+              <h2 className="text-xl font-bold">Projects</h2>
+              <p>
+                I'm passionate about computer architecture, embedded systems for global applications, and system design. 
+                I enjoy developing for local businesses and collaborating with small teams to bring ideas to market.
+                I also bring significant experience as a full-stack web and mobile
+                developer. My goal is to be able to think of any idea, physical or digital, and have the technical and organizational ability to create it from start to finish. <br />
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table className="w-full">
+        <tbody>
+          <tr>
+            <td className="w-1/4 p-5 align-middle">
+              <img src={surfvision} className="w-full" />
+            </td>
+            <td className="w-3/4 p-5 align-middle">
+              <a>
+                <span className="font-semibold text-lg">Surfvision</span>
+              </a>
+              <br />
+              C, C++, OpenCV, RaspberryPi 5
+              <br />
+              <em>Jan 2025 - Present</em>
+              <br />
+              <p>
+                Currenlty building a physical version of Surfen. Surfline I am coming for you. 
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table className="w-full">
+        <tbody>
+          <tr>
+            <td className="w-1/4 p-5 align-middle">
+              <img src={processorpaper} className="w-full" />
+            </td>
+            <td className="w-3/4 p-5 align-middle">
+              <a>
+                <span className="font-semibold text-lg">Optimized MIPS Processor</span>
+              </a>
+              <br />
+              System Verilog, C++, Verilator, gtkWave, Docker
+              <br />
+              <em>Jan 2025 - Mar 2025</em>
+              <br />
+              <a href="https://docs.google.com/document/d/1jT_bwGmo-XIpRoUJqOx4tKO1KzYpKX8RqkCzjB_8o48/edit?usp=sharing" target="_blank">Academic Paper</a>{" "}
+              <p>
+                Implemented four optimizations to the classical Hennesey & Patterson 5-Stage Processor. Reduced CPI for all benchmarks.
+                Implemented instruction cache next-line prefetching, data cache stride prefetching with stream buffers, branch prediction with global pattern tracking and fetch-stage branch target buffer, and two-way superscalar processing.
+                <br />
+                Compared baseline performance against nqueens, coin, esift2, and quickSort benchmarks.  
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+      <table className="w-full">
+        <tbody>
+          <tr>
+            <td className="w-1/4 p-5 align-middle">
+              <img src={dronegif} className="w-full h-3/5" />
+            </td>
+            <td className="w-3/4 p-5 align-middle">
+              <a>
+                <span className="font-semibold text-lg">Drone</span>
+              </a>
+              <br />
+              ATMega128rfa, Autodesk Fusion, Arduino
+              <br />
+              <em>Sept 2024 - Dec 2024</em>
+              <br />
+              <p>
+                Created a drone from scratch, from PCB design to the air. Implemented PID tuning for motor actuation.
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table className="w-full">
+        <tbody>
+          <tr>
+            <td className="w-1/4 p-5 align-middle">
+              <img src={tritondemo} className="w-full" />
+            </td>
+            <td className="w-3/4 p-5 align-middle">
+              <a href="https://hamesjan.github.io/tritone_website/">
+                <span className="font-semibold text-lg">Tri-tone</span>
+              </a>
+              <br />
+              ESP32-S3, Teensy3.6, Adafruit RGB Matrix, OnShape, C++, Python
+              <br />
+              <em>Apr 2024 - June 2024</em>
+              <br />
+              <a href="https://www.youtube.com/embed/3uRzH58n3Qw">
+                Demo video
+              </a>{" "}
+              <p>
+                Processes audio into 1024 bin FFT data and then sends to a
+                pre-trained ML model for RGB inferencing and real-time color
+                prediction based on current dominant frequency and musical
+                context (10 previous dominant frequencies)
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table className="w-full">
+        <tbody>
+          <tr>
+            <td className="w-1/4 p-5 align-middle">
+              <img src={pokefy} className="w-full h-1/2" />
+            </td>
+            <td className="w-3/4 p-5 align-middle">
+              <a href="https://pokefy.web.app">
+                <span className="font-semibold text-lg">Pokefy</span>
+              </a>
+              <br />
+              React.js, Firebase, ChatGPT API, Spotify API
+              <br />
+              <em>Apr 2024 - June 2024</em>
+              <br />
+              {/* <a href="https://pokefy.web.app">Demo video</a>{" "} */}
+              <p>
+                Uses LLM to generate 6 Pokémon based on Spotify Music taste.
+                Pending approval to use Spotify API.
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table className="w-full">
+        <tbody>
+          <tr>
+            <td className="w-1/4 p-5 align-middle">
+              <img src={surfengif} className="w-full" />
+            </td>
+            <td className="w-3/4 p-5 align-middle">
+              <a href="https://surfen.web.app">
+                <span className="font-semibold text-lg">Surfen</span>
+              </a>
+              <br />
+              React.js, OpenCV, Numpy, Firebase, Flask, Tailwind, PythonAnywhere
+              <br />
+              <em>May 2023 - August 2023</em>
+              <br />
+              <a href="https://surfen.web.app">surfen.web.app</a>{" "}
+              <p>
+                Web application that acts as a video enhancer/converter that
+                takes a far-away video input stream of surfers at a local beach
+                and zooms in and enhances the surfer as they rip the wave.
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table className="w-full">
+        <tbody>
+          <tr>
+            <td className="w-1/4 p-5 align-middle">
+              <img src={plots} className="w-full" alt="NeRF-Casting" />
+            </td>
+            <td className="w-3/4 p-5 align-middle">
+              <a href="https://apps.apple.com/us/app/plots-party-with-your-homies/id1579989678">
+                <span className="font-semibold text-lg">
+                  plots - party with your homies (iOS)
+                </span>
+              </a>
+              <br />
+              Flutter, Firebase, Dart, Node.js, GCP
+              <br />
+              <em>August 2021 - February 2022</em>
+              <br />
+              <p>
+                <strong>Acquired by Cruuz LLC for $10,000</strong>
+              </p>
+              <p>
+                App features: event discovery, guest monitoring, dynamic
+                ticketing system, host-guest messaging, party group chats,
+                security management, locational notification system, and
+                announcements.
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 };
