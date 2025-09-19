@@ -7,6 +7,10 @@ import fish5 from "../../assets/imgs/fish/fish5.jpeg";
 import fish6 from "../../assets/imgs/fish/fish6.jpeg";
 import fish7 from "../../assets/imgs/fish/fish7.jpeg";
 import fish8 from "../../assets/imgs/fish/fish8.jpeg";
+import fish9_1 from "../../assets/imgs/fish/fish9_1.jpeg";
+import fish9_2 from "../../assets/imgs/fish/fish9_2.jpeg";
+import fish9_3 from "../../assets/imgs/fish/fish9_3.jpeg";
+import penny from "../../assets/imgs/fish/penny.jpeg";
 
 function FishPage() {
   const navigate = useNavigate();
@@ -23,6 +27,25 @@ function FishPage() {
       <br/>
       <br/>
       <h1>Welcome to the Fish Page</h1>
+      <br/>
+      <br/>
+      <br/>
+
+      {/* <strong>June 10, 2025</strong>
+      <p>This is a picture of my dog Penny</p>
+      <div className="flex space-x-4">
+        <img src={penny} className="w-[300px] max-h-[500px] object-cover" />
+      </div> */}
+      <br/>
+      <br/>
+      <br/>
+      <strong>April 13, 2025</strong>
+      <p>Some fishermeisters</p>
+      <div className="flex space-x-4">
+        <img src={fish9_1} className="w-[300px] max-h-[500px] object-cover" />
+        {/* <img src={fish9_2} className="w-[300px] max-h-[500px] object-cover" />
+        <img src={fish9_3} className="w-[300px] max-h-[500px] object-cover" /> */}
+      </div>
       <br/>
       <br/>
       <br/>

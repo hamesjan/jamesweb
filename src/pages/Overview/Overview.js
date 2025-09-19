@@ -2,7 +2,7 @@ import mugshot from "../../assets/imgs/mugshot.png";
 import plots from "../../assets/imgs/plots.png";
 import processorpaper from "../../assets/imgs/processorpaper.png";
 import surfvision from "../../assets/imgs/surfvision.png";
-import resume from "../../assets/JamesHanResume.pdf";
+import resume from "../../assets/JamesHanResume_July.pdf";
 import bio from "../../assets/bio.txt";
 import surfengif from "../../assets/out.gif";
 import dronegif from "../../assets/drone.gif";
@@ -46,14 +46,14 @@ const Overview = () => {
                 >
                   family business
                 </a>{" "}
-                from time to time. Currently, I am the lead embedded software engineer for{" "}
+                from time to time. Currently, I am the lead embedded firmware/software engineer for{" "}
                 <a
-                  href="https://www.goltech.co"
+                  href="https://www.geltechlabs.com"
                   className="text-blue-500 underline"
                 >
-                  Goltech
+                  Geltech
                 </a>,
-                 a medical technology startup based in San Diego.
+                 a biomedical technology startup based in San Diego.
               </p>
               <br />
               <p className="text-center">
@@ -61,6 +61,7 @@ const Overview = () => {
                 <a href={resume}>Resume</a> &nbsp;/&nbsp;
                 <a href={bio}>Bio</a> &nbsp;/&nbsp;
                 <a href="https://github.com/hamesjan/">Github</a>&nbsp;/&nbsp;
+                <a href="https://www.instagram.com/hamesjan/">Insta</a>&nbsp;/&nbsp;
                 <Link to="/fish">Fish</Link>
                 </p>
             </td>
