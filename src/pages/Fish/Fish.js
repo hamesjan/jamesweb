@@ -19,7 +19,7 @@ function FishPage() {
     <div style={{ position: "relative", padding: "20px" }}>
       {/* Back Button */}
       <button 
-        onClick={() => navigate(-1)} 
+        onClick={() => navigate("/")} 
       >
         ← Back
       </button>

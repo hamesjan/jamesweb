@@ -8,6 +8,8 @@ import surfengif from "../../assets/out.gif";
 import dronegif from "../../assets/drone.gif";
 import tritondemo from "../../assets/tritondemo.gif";
 import pokefy from "../../assets/pokefy.gif";
+import cloudart from "../../assets/cloudart.png";
+import dothink from "../../assets/dothink.png";
 import "./Overview.css";
 import { Link } from "react-router-dom";
 
@@ -98,6 +100,52 @@ const Overview = () => {
         <tbody>
           <tr>
             <td className="w-1/4 p-5 align-middle">
+              <img src={dothink} alt="dothink.ai" className="w-full" />
+            </td>
+            <td className="w-3/4 p-5 align-middle">
+              <a href="https://dothink.ai" target="_blank" rel="noopener noreferrer">
+                <span className="font-semibold text-lg">dothink.ai</span>
+              </a>
+              <br />
+              hehe
+              <br />
+              <em>Sept 2025 - present</em>
+              <br />
+              <p>
+                I made an app to turn your thoughts into an interactive mindmap. Explore questions, answers, and insights like never before.
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table className="w-full">
+        <tbody>
+          <tr>
+            <td className="w-1/4 p-5 align-middle">
+              <img src={cloudart} alt="Cloudart.io" className="w-full" />
+            </td>
+            <td className="w-3/4 p-5 align-middle">
+              <a href="https://cloudart.io" target="_blank" rel="noopener noreferrer">
+                <span className="font-semibold text-lg">Cloudart.io</span>
+              </a>
+              <br />
+              Three.js, Firebase, HTML/JS/CSS
+              <br />
+              <em>Aug 2025</em>
+              <br />
+              <p>
+                It's always fun looking at clouds and imagining shapes/art in the sky. I made cloudart.io as a little web app to allow players to draw shapes in the sky with smoke and view from below.
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table className="w-full">
+        <tbody>
+          <tr>
+            <td className="w-1/4 p-5 align-middle">
               <img src={surfvision} className="w-full" />
             </td>
             <td className="w-3/4 p-5 align-middle">
@@ -110,7 +158,7 @@ const Overview = () => {
               <em>Jan 2025 - Present</em>
               <br />
               <p>
-                Currenlty building a physical version of Surfen. Surfline I am coming for you. 
+                Based on surfen, I applied the comptuer vision algorithm for tracking a moving surfer to an embedded system with a 2 DOF tracking robot.
               </p>
             </td>
           </tr>
