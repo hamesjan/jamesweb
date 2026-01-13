@@ -2,7 +2,7 @@ import mugshot from "../../assets/imgs/mugshot.png";
 import plots from "../../assets/imgs/plots.png";
 import processorpaper from "../../assets/imgs/processorpaper.png";
 import surfvision from "../../assets/imgs/surfvision.png";
-import resume from "../../assets/JamesHanResume_July.pdf";
+import resume from "../../assets/JamesHanResume.pdf";
 import bio from "../../assets/bio.txt";
 import surfengif from "../../assets/out.gif";
 import dronegif from "../../assets/drone.gif";
@@ -10,6 +10,7 @@ import tritondemo from "../../assets/tritondemo.gif";
 import pokefy from "../../assets/pokefy.gif";
 import cloudart from "../../assets/cloudart.png";
 import dothink from "../../assets/dothink.png";
+import myes from "../../assets/myes.png";
 import "./Overview.css";
 import { Link } from "react-router-dom";
 
@@ -48,14 +49,14 @@ const Overview = () => {
                 >
                   family business
                 </a>{" "}
-                from time to time. Currently, I am the lead embedded firmware/software engineer for{" "}
+                from time to time. Currently, I am an embedded software intern working on firmware platforms for{" "}
                 <a
-                  href="https://www.geltechlabs.com"
+                  href="https://www.tesla.com"
                   className="text-blue-500 underline"
                 >
-                  Geltech
-                </a>,
-                 a biomedical technology startup based in San Diego.
+                  Tesla
+                </a>
+                 .
               </p>
               <br />
               <p className="text-center">
@@ -109,7 +110,7 @@ const Overview = () => {
               <br />
               hehe
               <br />
-              <em>Sept 2025 - present</em>
+              <em>Sept 2025</em>
               <br />
               <p>
                 I made an app to turn your thoughts into an interactive mindmap. Explore questions, answers, and insights like never before.
@@ -136,6 +137,29 @@ const Overview = () => {
               <br />
               <p>
                 It's always fun looking at clouds and imagining shapes/art in the sky. I made cloudart.io as a little web app to allow players to draw shapes in the sky with smoke and view from below.
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table className="w-full">
+        <tbody>
+          <tr>
+            <td className="w-1/4 p-5 align-middle">
+              <img src={myes} alt="MyEmbeddedSystems.com" className="w-full" />
+            </td>
+            <td className="w-3/4 p-5 align-middle">
+              <a href="https://myembeddedsystems.com" target="_blank" rel="noopener noreferrer">
+                <span className="font-semibold text-lg">MyEmbeddedSystems</span>
+              </a>
+              <br />
+              WordPress, PHP, ChatGPT API
+              <br />
+              <em>May 2025</em>
+              <br />
+              <p>
+                I wanted to start an embedded system blog so I can test agentic content creation capabilites 
               </p>
             </td>
           </tr>
